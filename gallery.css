@@ -1,0 +1,62 @@
+#jumbotron{
+	text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+	color:rgb(233, 234, 222);
+	background: #373B44;
+	background: -webkit-linear-gradient( #26307f, #100e47);
+	background: linear-gradient( #26307f, #100e47);
+	padding-top: 10px;
+	text-align: center;
+	box-shadow: 5px 5px 100px rgba(0,0,0,0.9);
+	font-family: 'Cinzel', serif;
+	text-transform: uppercase;
+	height:150px;
+		margin:auto;
+
+}
+@media screen and (max-width: 500px) {
+    #jumbotron {
+        font-size: 10px;
+    }
+}
+#body{
+background: #4fb9f2; 
+background: -webkit-linear-gradient(to right, #f2fcfe, #4fb9f2); 
+background: linear-gradient(to right, #f2fcfe, #4fb9f2); 
+
+}
+#content
+{
+	width:85%;
+}
+
+#jumbotron h1{
+	font-size: 5em;
+	font-weight: normal;
+}
+.row{
+	padding: 50px 10px;
+	float: left;
+}
+.image{  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding: 20px 20px;
+
+}
+.picbig{
+	position: absolute;
+	width: 0px;
+	-webkit-transition:width 0.3s linear 0s;
+	transition: width 0.3s linear 0s; 
+	z-index:10;
+}
+.image:hover + .picbig{
+	width: 400px;
+}
+
+.th:hover .image {
+  opacity: 0.5;
+}
